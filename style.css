@@ -1,0 +1,89 @@
+.Container{
+    background:white;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.todo-list{
+    width:350px;
+    height:500px;
+    border-radius: 1px solid black;
+    background-color: burlywood;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 30px;    
+}
+.todo-list>h1{
+    padding-top: 10px;
+}
+.addTask{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0;
+    margin-left: 15px;
+    gap:0;
+}
+#inputTask{
+    width:230px;
+    height:20px;
+    padding: 7px;
+}
+button{
+    background-color: green;
+     color: white; 
+}
+ul{
+    list-style: none;
+    padding: 15px;
+}
+li{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid;
+    padding: 8px;
+    margin-bottom: 7px;
+}
+li span {
+    flex-grow: 1; 
+    padding-left:3px; 
+}
+
+li .btn {
+    margin-left: 5px; 
+}
+
+.deletebtn, .editbtn {
+    color: inherit;
+    background: none;
+    cursor: pointer;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.deletebtn{
+    color: red;
+    background-color: none;
+}
+.editbtn{
+    color: green;
+    background-color: none;
+}
+.completed {
+    text-decoration: line-through; /* Strikethrough for completed tasks */
+    color: orange;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 10px;
+}
